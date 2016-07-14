@@ -976,7 +976,8 @@ static void __tick_nohz_idle_stop_tick(struct tick_sched *ts)
 	if (expires > 0LL) {
 		int was_stopped = ts->tick_stopped;
 
-		tick_nohz_stop_tick(ts, cpu);
+		tick_nohz_start_idle(ts);
+		ts->idle_calls++;
 
 		ts->idle_sleeps++;
 		ts->idle_expires = expires;
