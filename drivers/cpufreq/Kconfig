@@ -243,6 +243,9 @@ config SCHEDUTIL_DOWN_RATE_LIMIT
 
 endif
 
+config CPU_BOOST
+    bool "CAF CPU Boost"
+
 config CPU_INPUT_BOOST
 	bool "CPU Input Boost"
 	help
