@@ -26,6 +26,8 @@
 #include <linux/cpu.h>
 #include <linux/uaccess.h>
 #include <linux/cdev.h>
+#include <linux/platform_device.h>
+#include <linux/of_platform.h>
 
 #define TEEI_SWITCH_BIG_CORE
 
